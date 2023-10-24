@@ -1,0 +1,90 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    background-image: url(../img/macabre-pumpkin.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 96vh;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-family: 'Pangolin', cursive;
+}
+
+h1, p {
+    font-family: 'Bungee Spice', cursive;
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #575757;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: #010002;
+    border: 1px solid #333333;
+    color: #ffffff;
+    border-radius: 15px 25px 30px 15px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#56194f;
+    border-color: #802b5b;
+    margin: 1em auto;
+    min-width: 300px;
+    border-radius: 3px;
+}
+
+@media (max-width: 650px){
+    body {
+        background-size: cover;
+    }
+}

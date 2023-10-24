@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macabre Night Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body>
+    <h1 id="title">Macabre Night</h1>
+    <p id="description">Please join us for the most terrifying Halloween Party!</p>
+    <form id="survey-form">
+        <!-- Name, Email and Phone fields -->
+        <fieldset>
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" pattern="[A-Za-z ]+" title="Only letters and spaces allowed" required>
+            </label>
+            <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="age" id="number-label">Age (Optional) <input type="number" id="number" placeholder="Age" min="18" max="99">
+            </label>
+            <label for="phone" id="tel-label">Phone (Optional) <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]+" title="Only numbers allowed">
+            </label>
+        </fieldset>
+
+        <!-- Attendance mark-up fields -->
+        <fieldset>
+            <p>Please confirm if you are attending to our Macabre Night</p>
+            <label for="attendance"><input type="radio" name="attendance" id="attendance" class="inline" value="definitely"> Definitely!</label>
+            <label for="attendance"><input type="radio" name="attendance" id="attendance" class="inline" value="not-sure"> Not sure...</label>
+        </fieldset>
+
+        <!-- Costume Description fields -->
+        <fieldset>
+            <label for="user-costume">Which costume will you use?
+                <select name="user-costume" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Vampire</option>
+                    <option value="2">Wizard/Witch</option>
+                    <option value="3">Ghost</option>
+                    <option value="4">Zombie</option>
+                    <option value="5">Skeleton</option>
+                    <option value="6">Mummy</option>
+                    <option value="7">Serial killer</option>
+                    <option value="8">Other</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <!-- Dietary Restriction fields -->
+        <fieldset>
+            <p>Do you have any dietary restrictions? <em>(Check all that apply)</em></p>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="vegetarian"> Vegetarian (Vg)
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="vegan"> Vegan (V)
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="halal"> Halal (H)
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="kosher"> Kosher (K)
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="gluten-free"> Gluten-free (GF)
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="food-allergy"> Food Allergy
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline"  value="other"> Other
+            </label>
+            <label for="dietary-restrictions">
+                <input type="checkbox" name="dietary-restriction" id="dietary-restrictions" class="inline" value="none"> None
+            </label>
+        </fieldset>
+
+        <!-- Commentary fields -->
+        <fieldset>
+            <p>Let's make the creepiest Macabre Night that no one has ever seen!</p>
+            <label for="commentary">
+                <textarea name="commentary" id="commentary" cols="30" rows="3" placeholder="Questions, suggestions or comments? Please, write it here..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>
